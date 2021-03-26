@@ -1,5 +1,86 @@
+// Colors
+$darkblue: #163544;
+$turquoise: #149892;
+$green: #B9DEC9;
+$black: #000;
+$white: #FFF;
+
+// Buttons
+.btn_filled{
+    width: fit-content;
+    background-color:$turquoise;
+    color: $white;
+    border-radius: 40px;
+    padding: 10px 40px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    float: left;
+    
+}
+
+.btn_void{
+    width: fit-content;
+    color: $turquoise;
+    border-radius: 40px;
+    padding: 10px 40px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    border: solid 2px $turquoise;
+    float: left;
+}
+
 /* You can add global styles to this file, and also import other style files */
 html, body{
     margin: 0px;
     height: 100%;
+    font-family: 'Poppins', sans-serif;
 }
+
+section{
+    position: relative;
+    display: inline-block;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.grid{
+    max-width: 1350px;
+    margin: 0 auto;
+    padding: 60px 20px;
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: auto;
+    grid-column-gap: 20px;
+    grid-row-gap: 0;
+}
+
+.inner_grid{
+    grid-column: 1 / span 12;
+}
+
+.content_grid{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: auto;
+    grid-column-gap: 20px;
+    grid-row-gap: 0;
+}
+
+h1{
+    font-size: 60px;
+    color: $darkblue;
+    margin: 0;
+}
+
+h2{
+    color:white;
+    font-size: 40px;
+    text-align: center;
+}
+
+p{
+    font-size: 12px;
+    color: $darkblue;
+    margin: 0;
+}
+

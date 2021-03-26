@@ -1,0 +1,16 @@
+// Colors
+$darkblue: #163544;
+$turquoise: #149892;
+$green: #B9DEC9;
+$black: #000;
+$white: #FFF;
+
+#team{
+    background-color: $turquoise;
+
+    .middle{
+        grid-column: span 12;
+        text-align: center;
+    }
+
+}
