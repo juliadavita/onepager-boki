@@ -4,27 +4,33 @@ $green: #B9DEC9;
 $black: #000;
 $white: #FFF;
 
-.first_circle{
-    width: 1000px;
-    height: 1000px;
-    background-color: $darkblue;
-    border-radius: 500px;
-    position: absolute;
-    right: -200px;
-    top: -300px;
-}
+.content_grid{
+    position:relative;
 
-.left_content{
-    margin-top: 100px;
-    grid-column: span 5;
+    .first_circle{
+        width: 1000px;
+        height: 1000px;
+        background-color: $darkblue;
+        border-radius: 500px;
+        position: absolute;
+        right: -200px;
+        top: -450px;
+    }
 
-    .btn_container{
-        text-align: left;
-        margin-top:20px;
-
-        .btn_void{
-            margin-right: 20px;
+    .left_content{
+        margin: 100px 0;
+        grid-column: span 5;
+    
+        .btn_container{
+            text-align: left;
+            margin-top:20px;
+    
+            .btn_void{
+                margin-right: 20px;
+            }
         }
     }
 }
+
+
 

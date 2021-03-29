@@ -8,6 +8,67 @@ $white: #FFF;
 #team{
     background-color: $turquoise;
 
+    .grid{
+
+        .inner_grid{
+
+            .content_grid{
+                column-gap: 30px;
+
+                .member{
+                    grid-column: span 3;
+
+                    .member_picture{
+                        width: 200px;
+                        height: 200px;
+                        background-color: $white;
+                        border-radius: 100px;
+                        z-index: 99;
+                        margin: 0 auto;
+                    }
+
+                    .info{
+                        margin-top:10px;
+
+                        p{
+                            color: $white;
+                            text-align: center;
+                        }
+                    }
+
+                    .socials{
+                        margin: 0 auto;
+                        width: fit-content;
+
+                        .btn_social{
+                            width:30px;
+                            height:30px;
+                            border-radius: 20px;
+                            border: 1px solid $white;
+                            float: left;
+                            margin: 10px 5px;
+                            transition: 0.2s;
+
+                            &:hover{
+                                background-color: $darkblue;
+                            }
+
+                            img{
+                                display:block;
+                                margin: 0 auto;
+                                padding: auto 0;
+                                width: 15px;
+                                padding: 7px 0;
+
+                                
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
     .middle{
         grid-column: span 12;
         text-align: center;
