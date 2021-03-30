@@ -8,10 +8,11 @@ $white: #FFF;
 .grid{
 
     .logo{
-        
-        img{
-            width:100px;
-        }
+        background-image: url(../../../assets/logo.png);
+        width:150px;
+        height: 150px;
+        background-position: center center;
+        background-size: cover;
     }
 
     .menu_holder{
