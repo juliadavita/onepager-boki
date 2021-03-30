@@ -15,7 +15,13 @@ $white: #FFF;
     font-weight: 500;
     letter-spacing: 0.5px;
     float: left;
-    
+    cursor: pointer;
+    transition: 0.2s;
+
+    &:hover{
+        background-color: $darkblue;
+
+    }
 }
 
 .btn_void{
@@ -27,6 +33,46 @@ $white: #FFF;
     letter-spacing: 0.5px;
     border: solid 2px $turquoise;
     float: left;
+    cursor: pointer;
+    transition: 0.2s;
+
+    &:hover{
+        color: $darkblue;
+        border: solid 2px $darkblue;
+    }
+}
+
+.btn_social{
+    width:30px;
+    height:30px;
+    border-radius: 20px;
+    border: 1px solid $white;
+    float: left;
+    margin: 10px 5px;
+    transition: 0.2s;
+    cursor: pointer;
+
+    &:hover{
+        background-color: $darkblue;
+    }
+
+    &.mail{
+        background-image: url(assets/mail.svg);
+        background-size: 18px 18px;
+        background-repeat: no-repeat;
+        background-position: center center;
+        display:block;
+        z-index: 99;
+    }
+    
+    &.linkedin{
+        background-image: url(assets/linkedin.svg);
+        background-size: 15px 15px;
+        background-repeat: no-repeat;
+        background-position: center center;
+        display:block;
+        z-index: 99;
+    }
 }
 
 /* You can add global styles to this file, and also import other style files */
@@ -82,5 +128,10 @@ p{
     font-size: 12px;
     color: $darkblue;
     margin: 0;
+}
+
+.middle{
+    grid-column: span 12;
+    text-align: center;
 }
 

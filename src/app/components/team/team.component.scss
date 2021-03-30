@@ -13,18 +13,42 @@ $white: #FFF;
         .inner_grid{
 
             .content_grid{
+                grid-template-columns: repeat(10,1fr);
                 column-gap: 30px;
 
                 .member{
-                    grid-column: span 3;
+                    grid-column: span 2;
 
                     .member_picture{
                         width: 200px;
                         height: 200px;
                         background-color: $white;
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        background-position: center center;
                         border-radius: 100px;
                         z-index: 99;
                         margin: 0 auto;
+
+                        &.thijs{
+                            background-image: url(../../../assets/Thijs.jpeg);
+                        }
+
+                        &.julia{
+                            background-image: url(../../../assets/Julia.jpg);
+                        }
+
+                        &.irene{
+                            background-image: url(../../../assets/Irene.jpeg);
+                        }
+
+                        &.rijza{
+                            background-image: url(../../../assets/Rijza.jpeg);
+                        }
+
+                        &.maurits{
+                            background-image: url(../../../assets/Maurits.jpeg);
+                        }
                     }
 
                     .info{
@@ -33,6 +57,7 @@ $white: #FFF;
                         p{
                             color: $white;
                             text-align: center;
+                            font-size: 15px;
                         }
                     }
 
@@ -40,38 +65,11 @@ $white: #FFF;
                         margin: 0 auto;
                         width: fit-content;
 
-                        .btn_social{
-                            width:30px;
-                            height:30px;
-                            border-radius: 20px;
-                            border: 1px solid $white;
-                            float: left;
-                            margin: 10px 5px;
-                            transition: 0.2s;
-
-                            &:hover{
-                                background-color: $darkblue;
-                            }
-
-                            img{
-                                display:block;
-                                margin: 0 auto;
-                                padding: auto 0;
-                                width: 15px;
-                                padding: 7px 0;
-
-                                
-                            }
-                        }
+                        
                     }
                 }
             }
         }
-    }
-
-    .middle{
-        grid-column: span 12;
-        text-align: center;
     }
 
 }

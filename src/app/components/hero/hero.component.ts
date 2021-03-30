@@ -25,6 +25,14 @@ export class HeroComponent implements OnInit {
     this.members.push()
   }
 
+  toTeam(){
+    document.getElementById("team").scrollIntoView({behavior:"smooth"});
+  }
+
+  toProduct(){
+    document.getElementById("loki").scrollIntoView({behavior:"smooth"});
+  }
+
   // Functie en die geeft geen waarde terug (void)
   onClick(): void{
     this.test='Checking'
@@ -41,3 +49,5 @@ export type Member = {
   education : string,
   image : string
 }
+
+

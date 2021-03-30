@@ -13,8 +13,8 @@ $white: #FFF;
         background-color: $darkblue;
         border-radius: 500px;
         position: absolute;
-        right: -200px;
-        top: -450px;
+        right: -400px;
+        top: -550px;
     }
 
     .left_content{
@@ -28,6 +28,21 @@ $white: #FFF;
             .btn_void{
                 margin-right: 20px;
             }
+        }
+    }
+
+    .right_content{
+        grid-column: 6/ span 6;
+        z-index: 999;
+
+        .hero_boki{
+            width: 500px;
+            height: 500px;
+            border-radius: 300px;
+            background-image: url(../../../assets/boki.jpeg);
+            background-size: cover;
+            background-position: center center;
+            margin: 0 0 0 120px;
         }
     }
 }

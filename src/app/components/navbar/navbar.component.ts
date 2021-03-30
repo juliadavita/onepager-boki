@@ -12,4 +12,12 @@ export class NavbarComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  toTeam(){
+    document.getElementById("team").scrollIntoView({behavior:"smooth"});
+  }
+
+  toProduct(){
+    document.getElementById("loki").scrollIntoView({behavior:"smooth"});
+  }
+
 }
