@@ -115,8 +115,9 @@ section{
 
 h1{
     font-size: 60px;
+    line-height: 65px;
     color: $darkblue;
-    margin: 0;
+    margin: 0 0 20px 0;
 }
 
 h2{
@@ -126,7 +127,7 @@ h2{
 }
 
 p{
-    font-size: 12px;
+    font-size: 14px;
     color: $darkblue;
     margin: 0;
 }

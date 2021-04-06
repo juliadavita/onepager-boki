@@ -27,6 +27,16 @@ $white: #FFF;
 
                 .right_content{
                     grid-column: span 6;
+
+                    .boki{
+                        height:100%;
+                        width:500px;
+                        margin-left:100px;
+                        background-image: url(../../../assets/boki_denoised.png);
+                        background-size: contain;
+                        background-repeat: no-repeat;
+                        background-position: center center;
+                    }
                 }
             }
         }
