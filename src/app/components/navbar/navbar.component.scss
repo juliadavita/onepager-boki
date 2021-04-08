@@ -15,6 +15,14 @@ $white: #FFF;
         background-size: cover;
     }
 
+    .name{
+        grid-column: span 5;
+        color: $turquoise;
+        font-size:40px;
+        align-self: center;
+        font-weight: bold;
+    }
+
     .menu_holder{
         grid-column: 10/ span 3;
         z-index: 99;
